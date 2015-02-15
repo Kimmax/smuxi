@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MainWindow" Height="651.723" Width="1170.689">
     <Grid>
-        <Menu DockPanel.Dock="Top">
+        <Menu DockPanel.Dock="Top" VerticalAlignment="Top">
             <MenuItem Header="Smuxi">
                 <MenuItem Header="_Einstellungen"/>
                 <MenuItem Header="_Beenden"/>
@@ -37,7 +37,32 @@
                 <MenuItem Header="_Hilfe"/>
             </MenuItem>
         </Menu>
-
+        <Menu Margin="0,23,0,0" VerticalAlignment="Top">
+            <ListBoxItem>
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="icons/Smuxi-Symbolic/places/24/gtk-network.png" Stretch="None"/>
+                    <TextBlock VerticalAlignment="Center">Verbinden</TextBlock>
+                </StackPanel>
+            </ListBoxItem>
+            <ListBoxItem>
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="icons/Smuxi-Symbolic/actions/24/edit-find.png" Stretch="None"/>
+                    <TextBlock VerticalAlignment="Center">Finde Gruppen-Chat</TextBlock>
+                </StackPanel>
+            </ListBoxItem>
+            <ListBoxItem>
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="icons/Smuxi-Symbolic/actions/24/gtk-fullscreen.png" Stretch="None"/>
+                    <TextBlock VerticalAlignment="Center">Fullscreen</TextBlock>
+                </StackPanel>
+            </ListBoxItem>
+            <ListBoxItem>
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="icons/Smuxi-Symbolic/actions/24/gtk-preferences.png" Stretch="None"/>
+                    <TextBlock VerticalAlignment="Center">Einstellungen</TextBlock>
+                </StackPanel>
+            </ListBoxItem>
+        </Menu>
     </Grid>
 </Window>
 

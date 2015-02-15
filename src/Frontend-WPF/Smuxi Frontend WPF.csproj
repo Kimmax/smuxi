@@ -84,11 +84,66 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="icons\Smuxi-Symbolic\index.theme" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons\Smuxi-Symbolic\actions\16\smuxi-group-chat.png" />
+    <Resource Include="icons\Smuxi-Symbolic\actions\16\smuxi-person-chat.png" />
+    <Resource Include="icons\Smuxi-Symbolic\actions\16\smuxi-session-chat.png" />
+    <Resource Include="icons\Smuxi-Symbolic\actions\22\document-open.png" />
+    <Resource Include="icons\Smuxi-Symbolic\actions\22\edit-find.png" />
+    <Resource Include="icons\Smuxi-Symbolic\actions\22\go-next.png" />
+    <Resource Include="icons\Smuxi-Symbolic\actions\22\go-previous.png" />
+    <Resource Include="icons\Smuxi-Symbolic\actions\22\gtk-find.png" />
+    <Resource Include="icons\Smuxi-Symbolic\actions\22\gtk-fullscreen.png" />
+    <Resource Include="icons\Smuxi-Symbolic\actions\22\gtk-go-forward-ltr.png" />
+    <Resource Include="icons\Smuxi-Symbolic\actions\22\gtk-go-forward-rtl.png" />
+    <Resource Include="icons\Smuxi-Symbolic\actions\22\gtk-open.png" />
+    <Resource Include="icons\Smuxi-Symbolic\actions\22\gtk-preferences.png" />
+    <Resource Include="icons\Smuxi-Symbolic\actions\22\smuxi-group-chat.png" />
+    <Resource Include="icons\Smuxi-Symbolic\actions\22\smuxi-person-chat.png" />
+    <Resource Include="icons\Smuxi-Symbolic\actions\22\smuxi-session-chat.png" />
+    <Resource Include="icons\Smuxi-Symbolic\actions\22\view-fullscreen.png" />
+    <Resource Include="icons\Smuxi-Symbolic\actions\22\visualization.png" />
+    <Resource Include="icons\Smuxi-Symbolic\actions\24\document-open.png" />
+    <Resource Include="icons\Smuxi-Symbolic\actions\24\edit-find.png" />
+    <Resource Include="icons\Smuxi-Symbolic\actions\24\go-next.png" />
+    <Resource Include="icons\Smuxi-Symbolic\actions\24\go-previous.png" />
+    <Resource Include="icons\Smuxi-Symbolic\actions\24\gtk-find.png" />
+    <Resource Include="icons\Smuxi-Symbolic\actions\24\gtk-fullscreen.png" />
+    <Resource Include="icons\Smuxi-Symbolic\actions\24\gtk-go-forward-ltr.png" />
+    <Resource Include="icons\Smuxi-Symbolic\actions\24\gtk-go-forward-rtl.png" />
+    <Resource Include="icons\Smuxi-Symbolic\actions\24\gtk-open.png" />
+    <Resource Include="icons\Smuxi-Symbolic\actions\24\gtk-preferences.png" />
+    <Resource Include="icons\Smuxi-Symbolic\actions\24\smuxi-group-chat.png" />
+    <Resource Include="icons\Smuxi-Symbolic\actions\24\smuxi-person-chat.png" />
+    <Resource Include="icons\Smuxi-Symbolic\actions\24\smuxi-session-chat.png" />
+    <Resource Include="icons\Smuxi-Symbolic\actions\24\view-fullscreen.png" />
+    <Resource Include="icons\Smuxi-Symbolic\actions\24\visualization.png" />
+    <Content Include="icons\Smuxi-Symbolic\actions\scalable\document-open.svg" />
+    <Content Include="icons\Smuxi-Symbolic\actions\scalable\edit-find.svg" />
+    <Content Include="icons\Smuxi-Symbolic\actions\scalable\go-next.svg" />
+    <Content Include="icons\Smuxi-Symbolic\actions\scalable\go-previous.svg" />
+    <Content Include="icons\Smuxi-Symbolic\actions\scalable\gtk-preferences.svg" />
+    <Content Include="icons\Smuxi-Symbolic\actions\scalable\smuxi-group-chat.svg" />
+    <Content Include="icons\Smuxi-Symbolic\actions\scalable\smuxi-person-chat.svg" />
+    <Content Include="icons\Smuxi-Symbolic\actions\scalable\smuxi-session-chat.svg" />
+    <Content Include="icons\Smuxi-Symbolic\actions\scalable\view-fullscreen.svg" />
+    <Content Include="icons\Smuxi-Symbolic\actions\scalable\visualization.svg" />
+    <Resource Include="icons\Smuxi-Symbolic\places\22\gtk-network.png" />
+    <Resource Include="icons\Smuxi-Symbolic\places\22\network-idle.png" />
+    <Resource Include="icons\Smuxi-Symbolic\places\22\network-workgroup.png" />
+    <Resource Include="icons\Smuxi-Symbolic\places\22\network_local.png" />
+    <Resource Include="icons\Smuxi-Symbolic\places\24\gtk-network.png" />
+    <Resource Include="icons\Smuxi-Symbolic\places\24\network-idle.png" />
+    <Resource Include="icons\Smuxi-Symbolic\places\24\network-workgroup.png" />
+    <Resource Include="icons\Smuxi-Symbolic\places\24\network_local.png" />
+    <Content Include="icons\Smuxi-Symbolic\places\scalable\network-workgroup.svg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
