@@ -3,7 +3,21 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MainWindow" Height="651.723" Width="1170.689">
     <Grid>
-        <Menu DockPanel.Dock="Top" VerticalAlignment="Top">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="506*"/>
+            <RowDefinition Height="13*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="222*"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="789*"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="139*"/>
+        </Grid.ColumnDefinitions>
+        <Menu VerticalAlignment="Top" Grid.ColumnSpan="5" Height="23">
             <MenuItem Header="Smuxi">
                 <MenuItem Header="_Einstellungen"/>
                 <MenuItem Header="_Beenden"/>
@@ -37,7 +51,7 @@
                 <MenuItem Header="_Hilfe"/>
             </MenuItem>
         </Menu>
-        <Menu Margin="0,23,0,0" VerticalAlignment="Top">
+        <Menu Margin="0,23,0,0" VerticalAlignment="Top" Grid.ColumnSpan="5" Height="33">
             <ListBoxItem>
                 <StackPanel Orientation="Horizontal">
                     <Image Source="icons/Smuxi-Symbolic/places/24/gtk-network.png" Stretch="None"/>
@@ -63,6 +77,29 @@
                 </StackPanel>
             </ListBoxItem>
         </Menu>
+
+        <GridSplitter Grid.Column="1"
+          HorizontalAlignment="Center"
+          VerticalAlignment="Stretch"
+          Width="5" Grid.Row="1"
+          />
+        <GridSplitter Grid.Column="3"
+          HorizontalAlignment="Center"
+          VerticalAlignment="Stretch"
+          Width="5" Grid.Row="1"
+          />
+        <GridSplitter Grid.Column="0"
+                      Grid.ColumnSpan="5"
+          HorizontalAlignment="Stretch"
+          VerticalAlignment="Center" Grid.Row="2" ResizeDirection="Rows" Height="5"
+                      
+          />
+        
+        <Label Content="l" Margin="0" VerticalAlignment="Center" Background="Red" Grid.Row="1"/>
+        <Label Content="m" Grid.Column="2" Margin="0" VerticalAlignment="Center" Background="#FF0080FF" Grid.Row="1"/>
+        <Label Content="r" Grid.Column="4" Margin="0" Background="#FF3AFF00" Grid.Row="1" VerticalAlignment="Center"/>
+        <StatusBar Height="23" Margin="0" VerticalAlignment="Bottom" Grid.ColumnSpan="5" Grid.Row="4"/>
+        <TextBox Margin="0" Grid.Row="3" TextWrapping="Wrap" Text="TextBox" Grid.ColumnSpan="5" MinHeight="22"/>
     </Grid>
 </Window>
 
