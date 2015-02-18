@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -114,19 +114,7 @@
     <Compile Include="Messages\Dto\MessageDtoModelV1.cs" />
     <Compile Include="MessageBuffers\SqliteMessageBuffer.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Protocols\" />
-    <Folder Include="Messages\" />
-    <Folder Include="Chats\" />
-    <Folder Include="Config\" />
-    <Folder Include="Persons\" />
-    <Folder Include="MessageBuffers\" />
-    <Folder Include="Servers\" />
-    <Folder Include="Servers\JabbR\" />
-    <Folder Include="Hooks\" />
-    <Folder Include="Hooks\Commands\" />
-    <Folder Include="Hooks\Environments\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="..\..\po-Engine\da.po" />
     <None Include="..\..\po-Engine\de.po" />
@@ -136,13 +124,19 @@
     <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=a5715cc6d5c3540b">
       <HintPath>..\..\lib\log4net.dll</HintPath>
     </Reference>
+    <Reference Include="Mono.Data.Sqlite">
+      <HintPath>..\..\lib\Mono.Data.Sqlite.dll</HintPath>
+    </Reference>
     <Reference Include="Nini, Version=1.1.0.0, Culture=neutral, PublicKeyToken=c9892194e1b9ec1b">
       <HintPath>..\..\lib\Nini.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Text, Version=3.5.7.42207, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\ServiceStack.Text\NuGet\lib\net35\ServiceStack.Text.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.Remoting" />
     <Reference Include="System" />
     <Reference Include="Mono.Posix" />
-    <Reference Include="Mono.Data.Sqlite" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
@@ -150,17 +144,13 @@
     <Reference Include="System.Runtime.Serialization" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\lib\db4o-net\Db4objects.Db4o\Db4objects.Db4o-2010.csproj">
+      <Project>{600cd3bf-2ed2-4183-87f7-add78a968ae0}</Project>
+      <Name>Db4objects.Db4o-2010</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Common\Common.csproj">
       <Project>{73DEF91D-03FF-41E3-B2E1-3259AF247CA7}</Project>
       <Name>Common</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\lib\db4o-net\Db4objects.Db4o\Db4objects.Db4o-2010.csproj">
-      <Project>{600CD3BF-2ED2-4183-87F7-ADD78A968AE0}</Project>
-      <Name>Db4objects.Db4o-2010</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\lib\ServiceStack.Text\src\ServiceStack.Text\ServiceStack.Text.csproj">
-      <Project>{579B3FDB-CDAD-44E1-8417-885C38E49A0E}</Project>
-      <Name>ServiceStack.Text</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

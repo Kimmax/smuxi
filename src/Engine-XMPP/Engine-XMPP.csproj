@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -49,6 +49,10 @@
     <Compile Include="Protocols\Xmpp\FacebookProtocolManager.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\lib\agsxmpp\agsxmpp\agsxmpp.csproj">
+      <Project>{c6379274-c5de-41a2-ae3e-753f85a557ba}</Project>
+      <Name>agsxmpp</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Common\Common.csproj">
       <Project>{73DEF91D-03FF-41E3-B2E1-3259AF247CA7}</Project>
       <Name>Common</Name>
@@ -56,10 +60,6 @@
     <ProjectReference Include="..\Engine\Engine.csproj">
       <Project>{BCD52FCF-B7A8-42FB-AA8D-CF9921FF593E}</Project>
       <Name>Engine</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\lib\agsxmpp\agsxmpp\agsxmpp.csproj">
-      <Project>{C6379274-C5DE-41A2-AE3E-753F85A557BA}</Project>
-      <Name>agsxmpp</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\lib\StarkSoftProxy\StarkSoftProxy.csproj">
       <Project>{3F8CF2C1-EA37-444F-8693-A3A00B1131D2}</Project>

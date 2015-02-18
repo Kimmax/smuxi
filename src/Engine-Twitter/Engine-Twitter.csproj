@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -37,10 +37,7 @@
     <Compile Include="Protocols\Twitter\TwitterMessageBuilder.cs" />
     <Compile Include="Protocols\Twitter\TwitterSearchStream.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Protocols\" />
-    <Folder Include="Protocols\Twitter\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="log4net">
@@ -50,6 +47,14 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\lib\Twitterizer\Twitterizer2.Streaming\Twitterizer2.Streaming.csproj">
+      <Project>{afdc57ed-c013-4581-9d06-54d8a42d696d}</Project>
+      <Name>Twitterizer2.Streaming</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\lib\Twitterizer\Twitterizer2\Twitterizer2.csproj">
+      <Project>{2fdc3492-6b9e-4771-9755-7892c9cb1e96}</Project>
+      <Name>Twitterizer2</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Engine\Engine.csproj">
       <Project>{BCD52FCF-B7A8-42FB-AA8D-CF9921FF593E}</Project>
       <Name>Engine</Name>
@@ -57,14 +62,6 @@
     <ProjectReference Include="..\Common\Common.csproj">
       <Project>{73DEF91D-03FF-41E3-B2E1-3259AF247CA7}</Project>
       <Name>Common</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\lib\Twitterizer\Twitterizer2\Twitterizer2.csproj">
-      <Project>{2FDC3492-6B9E-4771-9755-7892C9CB1E96}</Project>
-      <Name>Twitterizer2</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\lib\Twitterizer\Twitterizer2.Streaming\Twitterizer2.Streaming.csproj">
-      <Project>{AFDC57ED-C013-4581-9D06-54D8A42D696D}</Project>
-      <Name>Twitterizer2.Streaming</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
