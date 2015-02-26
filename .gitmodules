@@ -1,33 +1,44 @@
 [submodule "lib/SmartIrc4net"]
 	path = lib/SmartIrc4net
 	url = https://github.com/meebey/SmartIrc4net.git
+	ignore = dirty
 [submodule "lib/Twitterizer"]
 	path = lib/Twitterizer
 	url = https://github.com/meebey/Twitterizer.git
+	ignore = dirty
 [submodule "lib/Newtonsoft.Json"]
 	path = lib/Newtonsoft.Json
 	url = https://github.com/meebey/Newtonsoft.Json.git
+	ignore = dirty
 [submodule "lib/db4o-net"]
 	path = lib/db4o-net
 	url = https://github.com/meebey/db4o-net.git
+	ignore = dirty
 [submodule "lib/agsxmpp"]
 	path = lib/agsxmpp
 	url = https://github.com/meebey/agsxmpp.git
+	ignore = dirty
 [submodule "lib/ServiceStack.Text"]
 	path = lib/ServiceStack.Text
 	url = https://github.com/meebey/ServiceStack.Text.git
+	ignore = dirty
 [submodule "lib/ServiceStack"]
 	path = lib/ServiceStack
 	url = https://github.com/meebey/ServiceStack.git
+	ignore = dirty
 [submodule "lib/messagingmenu-sharp"]
 	path = lib/messagingmenu-sharp
 	url = https://github.com/meebey/messagingmenu-sharp.git
+	ignore = dirty
 [submodule "lib/SignalR"]
 	path = lib/SignalR
 	url = https://github.com/meebey/SignalR.git
+	ignore = dirty
 [submodule "lib/JabbR"]
 	path = lib/JabbR
 	url = https://github.com/meebey/JabbR.git
+	ignore = dirty
 [submodule "lib/StarkSoftProxy"]
 	path = lib/StarkSoftProxy
 	url = https://github.com/meebey/starksoftproxy.git
+	ignore = dirty
